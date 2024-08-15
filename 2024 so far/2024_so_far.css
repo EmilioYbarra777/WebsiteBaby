@@ -1,0 +1,113 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #f8f9fa; /* Light background for the header */
+    padding: 1rem 0; /* Padding for header */
+    text-align: center; /* Center-align text in header */
+    position: relative; /* Position relative to position child images */
+}
+
+#ajolote,
+#kisya {
+    position: absolute;
+    height: 150px;
+    width: auto;
+}
+
+#ajolote {
+    right: 250px;
+    top: 10px;
+}
+
+#kisya {
+    right: 80px;
+    top: 0px;
+}
+
+.container {
+    max-width: 1200px; /* Maximum width for better readability */
+    margin: 0 auto; /* Center container */
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between; /* Space between left and right boxes */
+    margin-top: 20px; /* Space between header and content */
+    margin-bottom: 20px;
+}
+
+.left-box,
+.right-box {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    width: 50%; /* Each box takes up 50% of the container width */
+    flex-direction: column; /* Stack children vertically */
+    box-sizing: border-box;
+    padding: 1rem; /* Padding inside the boxes */
+    border-radius: 8px; /* Rounded corners for the boxes */
+}
+
+.left-box {
+    background-color: #e9ecef; /* Light background color for left box */
+}
+
+.right-box {
+    background-color: #f8d7da; /* Light background color for right box */
+}
+
+/* Adjustments for .lists */
+.lists {
+    border-radius: 7px;
+    max-width: 300px;
+    display: block; /* Ensure lists are block-level elements */
+    box-sizing: border-box;
+    margin-bottom: 1.5rem; /* Space between sections */
+    padding: 1rem; /* Padding inside list sections */
+    background: white; /* Ensure list sections have a white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+    .lists h3 {
+        font-family: 'Pacifico', cursive; /* Pacifico font for headings */
+        margin-bottom: 1rem; /* Space below headings */
+    }
+
+    .lists ul {
+        list-style-type: none; /* Remove default list styling */
+        padding-left: 0;
+    }
+
+    .lists li {
+        padding: 0.5rem 0; /* Space between list items */
+        border-bottom: 1px solid #ddd; /* Light border for separation */
+    }
+
+        .lists li:last-child {
+            border-bottom: none; /* Remove border from last item */
+        }
+
+/* Background colors for different sections */
+.shows {
+    background-color: lightblue;
+}
+
+.movies {
+    background-color: lightgreen;
+}
+
+.food {
+    background-color: lightyellow;
+}
+
+.songs {
+    background-color: lightpink;
+}
+
+.things_we_did {
+    background-color: lightcoral;
+}
