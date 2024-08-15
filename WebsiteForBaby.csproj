@@ -67,13 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="2024 so far\2024_so_far.css" />
     <Content Include="2024 so far\2024_so_far.html" />
     <Content Include="About my baby\about_my_baby.css" />
     <Content Include="About my baby\about_my_baby.html" />
     <Content Include="About my baby\about_my_baby.js" />
-    <Content Include="default\default.css" />
-    <Content Include="default\default.html" />
+    <Content Include="default\index.css" />
+    <Content Include="default\index.html" />
     <Content Include="To do list\todo_list.aspx" />
     <Content Include="To do list\todo_list.css" />
     <Content Include="To do list\todo_list.html" />
@@ -82,7 +83,7 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="default\default.js" />
+    <Content Include="default\index.js" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="To do list\todo_list.aspx.cs">
       <DependentUpon>todo_list.aspx</DependentUpon>
