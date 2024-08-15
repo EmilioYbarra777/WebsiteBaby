@@ -41,7 +41,7 @@ body {
 /* Container for vertically aligned elements */
 .btn-group {
     position: absolute; /* Absolute positioning relative to the #content-container */
-    top: calc(30% + 332px + 0px); /* Positioning it below #ajolote1. Adjust '20px' as needed for spacing */
+    top: calc(30% + 310px + 20px); /* Positioning it below #ajolote1. Adjust '20px' as needed for spacing */
     left: 50%;
     transform: translate(-50%, 0); /* Center the container horizontally */
     display: flex; /* Use Flexbox for layout */
