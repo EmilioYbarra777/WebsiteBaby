@@ -4,13 +4,14 @@ body {
     font-family: 'Roboto', sans-serif; /* Unified font-family */
     color: #333; /* Dark grey text for readability */
     line-height: 1.6;
-    background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2); /* Soft gradient for background */
+    background-color: #f5f2e1;
 }
 
 
 
 body {
     font-family: 'Roboto', sans-serif;
+    
 }
 
 h1, h2 {
@@ -26,13 +27,27 @@ header h1 {
     
 }
 
-
-
-
-#about_my_baby_header{
-    
+.header-container {
+    background-color: #ffffff; /* White background for contrast */
+    padding: 20px; /* Space inside the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex; /* Center content */
+    justify-content: center; /* Center the header horizontally */
+    align-items: center; /* Center the header vertically */
 }
 
+
+
+#about_my_baby_header {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3rem; /* Larger size */
+    font-weight: bold;
+    color: #333; /* Dark color for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds depth */
+    margin: 20px 0; /* Space around the header */
+   
+}
 
 
 
@@ -74,6 +89,14 @@ header {
     height: auto; /* Maintain aspect ratio */
     /* Optional: adjust margins or padding if needed */
     
+}
+
+
+/* Position and size the orchids image */
+#orchids2 {
+    width: 80px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    /* Optional: adjust margins or padding if needed */
 }
 
 
@@ -217,6 +240,7 @@ header {
     max-width: 650px; /*originally 800*/
     margin: 0 auto;
     position: relative;
+    
 }
 
 .carousel-inner {
@@ -300,7 +324,7 @@ h1 {
     font-family: 'Roboto Slab', serif;
     font-size: 2.5rem; /* Adjust font size */
     font-weight: 700; /* Make font bold */
-    color: #ff6f61; /* Change color to a soft coral */
+    color: #e37b3a; /* Change color to a soft coral */
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Add subtle shadow for depth */
     border-bottom: 2px solid #ff6f61; /* Add bottom border */
     padding-bottom: 10px; /* Add space below text */
@@ -332,3 +356,7 @@ h1 {
 .carousel-caption {
     z-index: 10; /* Ensure captions are above other content */
 }
+
+
+
+
