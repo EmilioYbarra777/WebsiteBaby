@@ -360,3 +360,9 @@ h1 {
 
 
 
+@media (max-width: 768px) {
+    #orchids2 {
+        width: 50px; /* Adjust as needed */
+        height: auto;
+    }
+}
