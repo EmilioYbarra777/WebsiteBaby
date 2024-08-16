@@ -11,10 +11,16 @@ body {
     min-height: 450px;
     height: 100vh;
     margin: 0;
-    background: radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%);
+    background: radial-gradient(ellipse farthest-corner at center top, #e94e77 0%, #c8102e 100%);
     color: #fff;
     font-family: 'Nunito', sans-serif;
+    background: url('./Images/turkish_pattern.jpg') no-repeat center center fixed; /* Replace with your pattern URL */
+    background-size: cover; /* Ensures the image covers the entire viewport */
 }
+
+
+
+
 
 button,
 input,
@@ -36,7 +42,15 @@ textarea {
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
+    background: #f5f5f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
+
+
+
+
 
 /* Header Image */
 .cover-img .cover-inner {
@@ -59,7 +73,16 @@ textarea {
         height: 100%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+       
     }
+
+
+
+
+
+
+
+
 
 .cover-img h3 {
     position: absolute;
@@ -260,3 +283,5 @@ input[type=checkbox] {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
+
+

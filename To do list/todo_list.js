@@ -78,5 +78,10 @@ todoList.addEventListener('change', (e) => {
     }
 });
 
+
+
 // Load todos when the page loads
 window.addEventListener('load', loadTodos);
+
+
+

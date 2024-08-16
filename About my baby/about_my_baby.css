@@ -1,11 +1,56 @@
 ﻿/* Custom CSS for the page */
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
+    font-family: 'Roboto', sans-serif; /* Unified font-family */
+    color: #333; /* Dark grey text for readability */
     line-height: 1.6;
-    background-color: lightblue;
-    background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2);
+    background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2); /* Soft gradient for background */
 }
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+
+
+header h1 {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+
+
+
+#about_my_baby_header{
+    
+}
+
+
+
+
+header {
+    padding: 20px 0;
+    background-color: #ffffff; /* White background for contrast */
+}
+
+/* Flex container for header content */
+.header-content {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Center items horizontally */
+    gap: 10px; /* Space between header text and orchids image */
+}
+
+
+
 
 /* About Section Styling */
 #about_her {
@@ -20,14 +65,16 @@ body {
     }
 
 
-#orchids {
-    position: absolute;
-    top: 10px;
-    right: 410px;
-    width: auto;
-    height: 90px;
-}
 
+
+
+/* Position and size the orchids image */
+#orchids {
+    width: 80px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    /* Optional: adjust margins or padding if needed */
+    
+}
 
 
 #corazon {
@@ -68,12 +115,13 @@ body {
 
 
 
-#reasons {
-    background: #f0f0f0; /* Light gray background */
-    padding: 40px;
-    border-radius: 10px; /* Rounded corners for the section */
-}
 
+/* Reasons Section */
+#reasons {
+    background: #f5f5f5; /* Lighter grey for a subtle look */
+    padding: 40px;
+    border-radius: 10px;
+}
 
 
 
@@ -237,14 +285,19 @@ h1 {
 
 
 .carousel-indicators .active {
-    background-color: #4caf50; /* Highlight color for the active indicator */
+    background-color: #ff6f61; /* Change color to a soft coral */
 }
 
+
+
+/* Custom CSS for the Memories header */
 .memories-header {
-    font-family: 'Roboto Slab', serif; /* Matches the font used for h1 */
-    font-size: 2rem;
-    color: #333; /* Dark color for contrast */
-    margin-bottom: 20px; /* Space below the header */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow for better readability */
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5rem; /* Adjust font size */
+    font-weight: 700; /* Make font bold */
+    color: #ff6f61; /* Change color to a soft coral */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* Add subtle shadow for depth */
+    border-bottom: 2px solid #ff6f61; /* Add bottom border */
+    padding-bottom: 10px; /* Add space below text */
+    display: inline-block; /* Make border fit the text */
 }
-

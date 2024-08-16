@@ -70,11 +70,12 @@
     <Content Include=".gitignore" />
     <Content Include="2024 so far\2024_so_far.css" />
     <Content Include="2024 so far\2024_so_far.html" />
+    <Content Include="2024 so far\2024_so_far.js" />
     <Content Include="About my baby\about_my_baby.css" />
     <Content Include="About my baby\about_my_baby.html" />
     <Content Include="About my baby\about_my_baby.js" />
     <Content Include="default\index.css" />
-    <Content Include="default\index.html" />
+    <Content Include="index.html" />
     <Content Include="To do list\todo_list.aspx" />
     <Content Include="To do list\todo_list.css" />
     <Content Include="To do list\todo_list.html" />
@@ -113,6 +114,7 @@
     <Folder Include="2024 so far\Images\" />
     <Folder Include="About my baby\Images\" />
     <Folder Include="default\Images\" />
+    <Folder Include="To do list\Images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

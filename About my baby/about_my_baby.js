@@ -10,7 +10,7 @@ const months = Math.floor((timeElapsed % 365) / 30);
 const days = Math.floor((timeElapsed % 365) % 30);
 
 // Format the time elapsed string
-const timeElapsedString = `${years} years, ${months} months, and ${days} days`;
+const timeElapsedString = `${months} months, and ${days} days`;
 
 // Update the placeholder with the calculated time
 document.getElementById('time_elapsed').innerText = `We have been dating for ${timeElapsedString}!!! Let's go for more.`;
