@@ -1,43 +1,38 @@
 ﻿/* General body styling */
 body {
     background-color: lightblue; /* Base color for a water-like effect */
+
+    
     background-image: url(''); /* Replace with your underwater background image */
     background-size: cover; /* Cover the entire page */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent repeating the background image */
     background-attachment: fixed; /* Make the background image fixed relative to the viewport */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    overflow: hidden; /* Prevent scrolling */
+    
 }
 
-/* Container styling (mobile-first) */
+
+
 #container {
-    position: fixed; /* Fix the container position */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Center the container */
-    width: 90%; /* Responsive width */
-    height: 80%; /* Responsive height */
-    overflow: hidden; /* Hide overflow */
+    display: block;
+    width: 100%;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    animation: descend 1s ease-out; /* Apply the animation */
+
+
 }
 
-/* Content container styling (mobile-first) */
-#content-container {
-    position: relative; /* Ensure that children are positioned relative to this container */
-    width: 100%; /* Full width of the container */
-    height: 100%; /* Full height of the container */
-    display: flex;
-    flex-direction: column; /* Stack children vertically if needed */
-    align-items: center; /* Center children horizontally */
-    padding: 10px; /* Mobile padding */
-    box-sizing: border-box; /* Include padding in width/height calculations */
-}
 
-/* Button group styling */
+
+
+
+/* Container for vertically aligned elements */
 .btn-group {
     position: absolute;
-    top: 75%; /* Adjust position within content container */
+    top: 68%; /* or adjust as needed */
     left: 50%;
     transform: translate(-50%, -50%); /* Center the container */
     display: flex; /* Use Flexbox for layout */
@@ -49,10 +44,12 @@ body {
     background: url('./Images/ajolote_wrapper.jpg'); /* Add your background image URL */
     background-size: cover; /* Ensure the image covers the entire button */
     background-position: center; /* Center the image within the container */
-    width: 80%; /* Responsive width */
+    /*background-repeat: no-repeat;  Prevent the image from repeating */
+    width: 24%; /* Adjust width as needed */
     padding: 10px; /* Add padding around the container */
     box-sizing: border-box; /* Include padding in the width/height calculations */
 }
+
 
 /* Styling for anchor tags to ensure only the text is clickable */
 a.btn {
@@ -61,16 +58,20 @@ a.btn {
     -1px -1px 0 rgba(255, 255, 255, 0.6), /* Light border on bottom-left */
     1px -1px 0 rgba(255, 255, 255, 0.6), /* Light border on top-left */
     -1px 1px 0 rgba(255, 255, 255, 0.6); /* Light border on bottom-right */
-    font-size: 16px; /* Mobile font size */
+    font-size: 20px;
     box-sizing: border-box;
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit color from parent */
     background-color: transparent; /* Ensure no background color */
     display: inline-block; /* Allows padding to work properly */
     margin: 5px 0; /* Space between links */
-    position: relative;
-    overflow: hidden;
+
+    
+    position:relative;
+    overflow:hidden;
+
 }
+
 
     /* Tape effect using ::before pseudo-element */
     a.btn::before {
@@ -88,34 +89,49 @@ a.btn {
         clip-path: polygon(0 20%, 10% 0, 90% 0, 100% 20%, 100% 100%, 0 100%); /* Create a tape-like effect */
     }
 
+
+
+
+
+
+
+
+/* Styling for #ajolote1 */
 #ajolote1 {
-    display: flex;
-    top: 38%;
-    width: 50%; /* Fixed width */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 340px;
+    width: 340px;
     transform: rotate(12deg);
-    position: absolute;
+    position:relative;
+    
+    
 }
 
+/* Basic styling for the speech bubble */
 .speech-bubble {
     position: absolute;
-    top: 45%; /* Adjust as needed */
-    right: 10%;
+    top: 45%;
+    left: 60%;
     transform: translate(-50%, -50%);
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 10px; /* Mobile padding */
-    max-width: 80%; /* Responsive width */
+    padding: 15px;
+    max-width: 250px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     opacity: 0; /* Initially hidden */
     animation: popIn 0.5s forwards; /* Apply the animation */
-    animation-delay: 1s;
+    animation-delay:1s;
 }
 
+    /* Paragraph inside the speech bubble */
     .speech-bubble p {
         margin: 0;
     }
 
+/* Styling for the bubble pointer */
 .bubble-pointer {
     position: absolute;
     top: 50%;
@@ -129,6 +145,9 @@ a.btn {
     animation: pointerMove 0.5s infinite; /* Apply the animation */
 }
 
+
+
+/* Bubble container positioned relative to the ajolote */
 .bubble-container {
     position: absolute;
     bottom: 0; /* Adjust as needed */
@@ -140,36 +159,44 @@ a.btn {
     transform: translateX(-50%);
 }
 
+/* Basic styling for bubbles */
 .bubble {
     position: relative;
     background: rgba(255, 255, 255, 0.6);
     border-radius: 50%;
-    width: 15px; /* Fixed size */
-    height: 15px; /* Fixed size */
+    width: 15px;
+    height: 15px;
     opacity: 0;
     animation: bubbleAnimation 3s infinite;
 }
 
-    .bubble:nth-child(1) {
-        left: 10%;
-        animation-delay: 0s;
-    }
 
-    .bubble:nth-child(2) {
-        left: 30%;
-        animation-delay: 0.5s;
-    }
 
-    .bubble:nth-child(3) {
-        left: 50%;
-        animation-delay: 1s;
-    }
+/* Randomize bubble positions and animation delay */
+.bubble:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
 
-    .bubble:nth-child(4) {
-        left: 70%;
-        animation-delay: 1.5s;
-    }
+.bubble:nth-child(2) {
+    left: 30%;
+    animation-delay: 0.5s;
+}
 
+.bubble:nth-child(3) {
+    left: 50%;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(4) {
+    left: 70%;
+    animation-delay: 1.5s;
+}
+
+
+
+
+/* Keyframes for the "pop" animation */
 @keyframes popIn {
     0% {
         opacity: 0;
@@ -182,6 +209,7 @@ a.btn {
     }
 }
 
+/* Keyframes for the pointer movement */
 @keyframes pointerMove {
     0% {
         left: -10px;
@@ -199,6 +227,10 @@ a.btn {
     }
 }
 
+
+
+
+/* Keyframes for the "descend" animation */
 @keyframes descend {
     0% {
         opacity: 0;
@@ -211,6 +243,8 @@ a.btn {
     }
 }
 
+
+/* Keyframes for bubble animation */
 @keyframes bubbleAnimation {
     0% {
         transform: translateY(100%) scale(0.5);
@@ -228,51 +262,25 @@ a.btn {
     }
 }
 
-/* Media queries for larger screens */
-@media (min-width: 600px) {
-    #container {
-        width: 80%; /* Adjust width for tablets */
-        height: 70%; /* Adjust height for tablets */
-    }
 
-    #content-container {
-        padding: 20px; /* Increase padding for tablets */
-    }
 
-    .btn-group {
-        width: 70%; /* Adjust width for tablets */
-    }
 
-    a.btn {
-        font-size: 18px; /* Increase font size for tablets */
-    }
 
-    .speech-bubble {
-        max-width: 70%; /* Adjust width for tablets */
-        padding: 15px; /* Increase padding for tablets */
+
+
+
+
+
+
+/* Media queries for mobile devices */
+@media only screen and (max-device-width: 380px) {
+    .mobile_device_380px {
+        display: block;
     }
 }
 
-@media (min-width: 992px) {
-    #container {
-        width: 60%; /* Adjust width for desktops */
-        height: 60%; /* Adjust height for desktops */
-    }
-
-    #content-container {
-        padding: 30px; /* Increase padding for desktops */
-    }
-
-    .btn-group {
-        width: 50%; /* Adjust width for desktops */
-    }
-
-    a.btn {
-        font-size: 20px; /* Increase font size for desktops */
-    }
-
-    .speech-bubble {
-        max-width: 50%; /* Adjust width for desktops */
-        padding: 20px; /* Increase padding for desktops */
+@media only screen and (max-device-width: 480px) {
+    .mobile_device_480px {
+        display: block;
     }
 }

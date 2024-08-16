@@ -40,7 +40,7 @@ textarea {
 
 /* Header Image */
 .cover-img .cover-inner {
-    background: url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1533&q=80');
+    background: url('./Images/istanbul.jpg');
     height: 190px;
     background-size: cover;
     background-position: 10% 20%;
