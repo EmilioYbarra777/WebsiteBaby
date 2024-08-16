@@ -189,6 +189,11 @@ header {
     z-index: 1; /* Ensure it’s above the list */
 }
 
+
+
+
+
+
 #ajolote {
     position: absolute;
     top: 10px; /* Adjusted from the top to fit better */
@@ -300,4 +305,13 @@ h1 {
     border-bottom: 2px solid #ff6f61; /* Add bottom border */
     padding-bottom: 10px; /* Add space below text */
     display: inline-block; /* Make border fit the text */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    #heart_cardboard {
+        width: 50px; /* Smaller size for mobile devices */
+        bottom: 0; /* Adjust distance from the bottom edge */
+        right: 0; /* Adjust distance from the right edge */
+    }
 }
