@@ -16,3 +16,12 @@ const timeElapsedString = `${months} months, and ${days} days`;
 document.getElementById('time_elapsed').innerText = `We have been dating for ${timeElapsedString}!!! Let's go for more.`;
 
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+        img.addEventListener('load', () => {
+            img.classList.add('loaded');
+        });
+    });
+});
