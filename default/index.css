@@ -103,22 +103,20 @@ a.btn {
 
 
 #ajolote1 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 340px;
-    width: 340px;
+    display: flex;
+    top:-6%;
+    width:30%;
     transform: rotate(12deg);
-    position: relative;
-    top: 75px; /* Move the image up by 20px; adjust as needed */
+    position: absolute;
+    
 }
 
 
 /* Basic styling for the speech bubble */
 .speech-bubble {
     position: absolute;
-    top: 60%;
-    right: 15%;
+    top: 45%;
+    right: 25%;
     transform: translate(-50%, -50%);
     background: #fff;
     border: 1px solid #ccc;
