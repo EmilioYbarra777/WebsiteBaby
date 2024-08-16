@@ -316,3 +316,19 @@ h1 {
         z-index:-1;
     }
 }
+
+
+
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .carousel-caption {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+        padding: 10px; /* Increase padding for better readability */
+    }
+}
+
+
+.carousel-caption {
+    z-index: 10; /* Ensure captions are above other content */
+}
