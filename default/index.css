@@ -51,7 +51,7 @@ body {
     background-size: cover; /* Ensure the image covers the entire button */
     background-position: center; /* Center the image within the container */
     /*background-repeat: no-repeat;  Prevent the image from repeating */
-    width: 24%; /* Adjust width as needed */
+    width: 30%; /* Adjust width as needed */
     padding: 10px; /* Add padding around the container */
     box-sizing: border-box; /* Include padding in the width/height calculations */
 }
@@ -110,15 +110,15 @@ a.btn {
     width: 340px;
     transform: rotate(12deg);
     position: relative;
-    top: -131px; /* Move the image up by 20px; adjust as needed */
+    top: 75px; /* Move the image up by 20px; adjust as needed */
 }
 
 
 /* Basic styling for the speech bubble */
 .speech-bubble {
     position: absolute;
-    top: 45%;
-    left: 60%;
+    top: 60%;
+    right: 15%;
     transform: translate(-50%, -50%);
     background: #fff;
     border: 1px solid #ccc;
