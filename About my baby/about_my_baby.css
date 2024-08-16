@@ -313,6 +313,6 @@ h1 {
         width: 50px; /* Smaller size for mobile devices */
         bottom: 0; /* Adjust distance from the bottom edge */
         right: 0; /* Adjust distance from the right edge */
-        z-index:0;
+        z-index:-1;
     }
 }
