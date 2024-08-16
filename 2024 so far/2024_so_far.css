@@ -1,28 +1,33 @@
 ﻿body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5; /* Light gray background */
+    font-family: 'Roboto', sans-serif;
+    background: url('path/to/your/background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 header {
-    background: #ffffff; /* White background for header */
-    padding: 2rem 0; /* Padding for header */
-    text-align: center; /* Center-align text in header */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    position: relative; /* Position relative for header images */
+    background: linear-gradient(to bottom right, #ffffff, #e0f7fa); /* Gradient background */
+    padding: 4rem 0; /* Increased padding for a larger header */
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    position: relative;
+    border-bottom: 4px solid #007bff; /* Bottom border for separation */
 }
 
 .header-images {
     position: relative;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    margin-top: 1.5rem; /* Space between header text and images */
 }
 
 #ajolote, #kisya {
-    height: 200px;
+    height: 220px; /* Slightly larger images */
     width: auto;
+    border:none;
+   
+   
 }
 
 .container {
@@ -108,3 +113,120 @@ header {
     .list-group-item strong {
         color: #333; /* Bold text color */
     }
+
+
+
+body {
+    font-family: 'Roboto', sans-serif; /* Consider a more modern font */
+}
+
+h1, h2, h3 {
+    font-family: 'Pacifico', cursive; /* Use Pacifico for headings */
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+
+.list-group-item {
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+    .list-group-item:hover {
+        background: #e9ecef;
+        transform: scale(1.02); /* Slightly enlarge on hover */
+    }
+
+.list-section {
+    transition: box-shadow 0.3s ease;
+}
+
+    .list-section:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+
+
+.container {
+    padding: 0 2rem; /* Add horizontal padding */
+}
+
+
+
+
+/* Ensure header-images is relatively positioned */
+.header-images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the images vertically */
+}
+
+/* Ajolote-specific positioning */
+#ajolote {
+    position: relative; /* Ajolote's position relative to parent */
+    z-index: 1; /* Ajolote on top of hearts */
+}
+
+/* Hearts container should be positioned relative to Ajolote */
+.hearts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensure hearts do not block interactions */
+    z-index: 0; /* Hearts behind Ajolote */
+    overflow: hidden; /* Prevent hearts from overflowing */
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    transform: rotate(-45deg);
+    opacity: 0;
+    animation: heart-float 6s infinite; /* Adjust duration for float effect */
+}
+
+    .heart::before,
+    .heart::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        border-radius: 50%;
+    }
+
+    .heart::before {
+        top: -10px;
+        left: 0;
+    }
+
+    .heart::after {
+        left: 10px;
+        top: 0;
+    }
+
+@keyframes heart-float {
+    0% {
+        transform: translateY(0) scale(1) rotate(-45deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-200px) scale(0) rotate(-45deg);
+        opacity: 0;
+    }
+}

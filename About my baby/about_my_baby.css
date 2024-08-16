@@ -43,7 +43,12 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px; /* More padding for better readability */
+    background-color: #ffffff; /* Background color for better contrast */
 }
+
+
+
 
     .text_container p {
         margin: 0;
@@ -61,12 +66,15 @@ body {
 
 
 
+
+
 #reasons {
-    background: #f8f8f8; /* Light gray background for contrast */
-    padding: 30px;
-    display: flex;
-    justify-content: center; /* Centering the content horizontally */
+    background: #f0f0f0; /* Light gray background */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners for the section */
 }
+
+
 
 
 
@@ -172,15 +180,9 @@ body {
 }
 
 .carousel-caption {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    text-align: left;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background for better readability */
-    padding: 10px;
-    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background for captions */
+    padding: 5px; /* More padding */
+    border-radius: 10px; /* Rounded corners */
 }
 
 .carousel-caption h5 {
@@ -201,9 +203,8 @@ body {
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: background for icons */
-    border-radius: 50%; /* Makes icons circular */
-    
+    background-color: rgba(0, 0, 0, 0.5); /* Darker background for control icons */
+    border-radius: 50%;
 }
 
 
@@ -239,4 +240,11 @@ h1 {
     background-color: #4caf50; /* Highlight color for the active indicator */
 }
 
+.memories-header {
+    font-family: 'Roboto Slab', serif; /* Matches the font used for h1 */
+    font-size: 2rem;
+    color: #333; /* Dark color for contrast */
+    margin-bottom: 20px; /* Space below the header */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow for better readability */
+}
 

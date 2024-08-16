@@ -14,3 +14,5 @@ const timeElapsedString = `${years} years, ${months} months, and ${days} days`;
 
 // Update the placeholder with the calculated time
 document.getElementById('time_elapsed').innerText = `We have been dating for ${timeElapsedString}!!! Let's go for more.`;
+
+
